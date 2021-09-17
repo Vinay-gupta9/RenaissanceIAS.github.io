@@ -1,0 +1,181 @@
+/* fronts */
+@front-face{
+    front-family:"Raleway-regular";
+    src:url(..\fronts\Raleway-Regular.ttf)
+}
+@front-face{
+    front-family:"Raleway-medium";
+    src:url(..\fronts\Raleway-Medium.ttf)
+}
+
+@front-face{
+    front-family:"Raleway-semibold";
+    src:url(..\fronts\Raleway-SemiBold.ttf)
+}
+
+@front-face{
+    front-family:"Raleway-bold";
+    src:url(..\fronts\Raleway-Bold.ttf)
+}
+@front-face{
+    front-family:"Raleway-black";
+    src:url(..\fronts\Raleway-Black.ttf)
+}
+
+
+
+/* colours */
+
+
+:root{
+    --lightyellow: #FFFFE0
+    --darkcyan: #008B8B
+    --black: #000000
+    --yellow: #FFFF00
+    --red: #FF0000
+
+}
+
+
+/*reset*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    padding:0 15px;
+    margin: 0 auto;
+
+}
+@media (min-width:576px){
+    .container{
+        max-width:540px;
+
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width:720px;
+       
+    }
+}
+@media (min-width:992px){
+    .container{
+        max-width:960px;
+       
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width:1152px;
+       
+    }
+}
+
+
+
+
+header.topbar{
+    background: var(--black);
+}
+
+.about-para {
+    margin-right: 2000%;
+    text-align: left;
+}
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3f3f44;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fbf9fa;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* 
+SIDENAVBAR */
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #1c1124;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #ececec;
+  color: #333c4a;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #3f3f44;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  max-width:  50% !important;
+  max-height: 50% !important;
+}
+
+.video{
+  margin-top: 100px;  
+  width: 50%;
+  /* height: 500%; */
+  /* width: 420; */
+  height: 100%;
+  margin-right: 20px;
+  /* width="420" height="315"  */
+}
+
+.video-content {
+  margin-top: 100px;
+  width: 50%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.prelims-title {
+  color: #1c1124;
+}
